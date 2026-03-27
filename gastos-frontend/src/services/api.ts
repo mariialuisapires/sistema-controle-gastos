@@ -1,16 +1,18 @@
 import axios from 'axios'
 
 
-export enum TipoTransacao {
-  Despesa = 0,
-  Receita = 1
-}
+export const TipoTransacao = {
+  Despesa: 0,
+  Receita: 1
+} as const
+export type TipoTransacao = typeof TipoTransacao[keyof typeof TipoTransacao]
 
-export enum FinalidadeCategoria {
-  Despesa = 0,
-  Receita = 1,
-  Ambas = 2
-}
+export const FinalidadeCategoria = {
+  Despesa: 0,
+  Receita: 1,
+  Ambas: 2
+} as const
+export type FinalidadeCategoria = typeof FinalidadeCategoria[keyof typeof FinalidadeCategoria]
 
 export interface Pessoa {
   id: string

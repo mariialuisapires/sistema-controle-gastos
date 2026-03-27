@@ -1,4 +1,6 @@
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import PessoasPage from './pages/PessoasPage'
+
 
 function App() {
   return (
@@ -15,7 +17,7 @@ function App() {
 
       <div style={{ maxWidth: '1100px', margin: '30px auto', padding: '0 20px' }}>
         <Routes>
-          <Route path="/" element={<h1>Pessoas (em breve)</h1>} />
+          <Route path="/" element={<PessoasPage />} />
           <Route path="/categorias" element={<h1>Categorias (em breve)</h1>} />
           <Route path="/transacoes" element={<h1>Transações (em breve)</h1>} />
           <Route path="/totais" element={<h1>Totais (em breve)</h1>} />
