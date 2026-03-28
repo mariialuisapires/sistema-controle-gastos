@@ -2,6 +2,8 @@ import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
 import PessoasPage from './pages/PessoasPage'
 import CategoriasPage from './pages/CategoriasPage'
 import TransacoesPage from './pages/TransacoesPage'
+import TotaisPage from './pages/TotaisPage'
+
 
 
 
@@ -24,7 +26,7 @@ function App() {
           <Route path="/" element={<PessoasPage />} />
           <Route path="/categorias" element={<CategoriasPage />} />
           <Route path="/transacoes" element={<TransacoesPage />} />
-          <Route path="/totais" element={<h1>Totais (em breve)</h1>} />
+          <Route path="/totais" element={<TotaisPage />} />
         </Routes>
       </div>
     </BrowserRouter>
